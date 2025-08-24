@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人資訊頁</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <script type="module" crossorigin src="/2025W8/assets/main-Cb51qiGm.js"></script>
+  <link rel="stylesheet" crossorigin href="/2025W8/assets/main-DEKU9NGq.css">
+</head>
+
+<body>
+  <nav class="navbar bg-white py-4 py-lg-5 fixed-top">
+  <div class="container position-relative">
+    <div class="me-auto d-flex align-items-center">
+      <a class="navbar-brand p-0 me-7" href="#"><img src="data:image/png;base64,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" alt="logo"></a>
+      <form class="position-relative d-none d-lg-block">
+        <span
+          class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">search</span>
+        <input type="search" class="form-control rounded-1 py-2 ps-10 header-search-desktop" id="header-search-desktop"
+          placeholder="搜尋景點、地點或城市">
+      </form>
+    </div>
+
+    <div class="position-absolute start-0 end-0 px-4 bg-white z-1">
+      <div class="collapse" id="header-search">
+        <div class="d-flex align-center">
+          <form class="position-relative w-100">
+            <span
+              class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">search</span>
+            <input type="search" class="form-control rounded-1 py-2 ps-10" id="header-search-content"
+              placeholder="搜尋景點、地點或城市">
+          </form>
+          <button type="button" class="btn p-2 border-0" data-bs-toggle="collapse" data-bs-target="#header-search">
+            <span class="material-icons-outlined">close</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <button type="button" class="btn p-2 border-0" data-bs-toggle="collapse" data-bs-target="#header-search">
+      <span class="material-icons-outlined align-bottom d-lg-none">search</span>
+    </button>
+    <a href="#" class="btn border-0 py-2">
+      <span class="position-relative">
+        <span class="material-icons-outlined align-bottom">shopping_cart</span>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-0 cart-tag">
+          2
+          <span class="visually-hidden">cart number</span>
+        </span>
+      </span>
+    </a>
+    <a href="user.html" class="d-none d-lg-block"><img src="/2025W8/assets/avatar-1-cp2HwrEX.png" alt="user-img"
+        class="user-img rounded-circle  ms-5 me-2">Jessica</a>
+    <button class="btn border-0 p-2 d-lg-none" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="material-icons-outlined align-bottom">menu</span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header pb-5">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pt-5 d-flex flex-column justify-content-between">
+        <div>
+          <a href="#" class="list-group-item  list-group-item-action d-flex align-items-center mb-3">
+            <img src="/2025W8/assets/avatar-1-cp2HwrEX.png" alt="user" class="common-photo rounded-circle me-2">
+            <div>
+              <p>Jessica Yen</p>
+              <p>jessica.yen@gamil.com</p>
+            </div>
+          </a>
+          <hr>
+          <ul>
+            <li class="py-4"><span class="material-icons-outlined align-bottom me-2">article</span>訂單管理</li>
+            <li class="py-4"><span class="material-icons-outlined align-bottom me-2">favorite_border</span>我的收藏</li>
+            <li class="py-4"><span class="material-icons-outlined align-bottom me-2">settings</span>帳號設定</li>
+          </ul>
+        </div>
+        <a href="#" class="py-4"> <span class="material-icons-outlined align-bottom me-2">logout</span>登出</a>
+      </div>
+    </div>
+  </div>
+</nav>    <main class="bg-neutral-15">
+      <div class="container main-user">
+        <section class="banner-user position-relative">
+          <div class="position-absolute d-none d-lg-block edit-banner text-white">
+            <span class="material-icons-outlined align-bottom me-2">edit</span>
+            <span>更換封面</span>
+          </div>
+          <div class="text-center profile position-absolute">
+            <img src="/2025W8/assets/avatar-1-cp2HwrEX.png" alt="user-img" class="edit-photo mb-2">
+            <h3 class="mb-1 fs-6 fs-lg-5 fw-bold">Jessica</h3>
+            <p class="fs-8 fs-lg-7">jessica.yen@gmail.com</p>
+          </div>
+        </section>
+
+        <div class="btn-group w-100 rounded-4 mb-7" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-light text-start fw-bold position-relative">我的帳號
+            <span class="btn-active"></span>
+          </button>
+          <button type="button" class="btn btn-light text-start  fw-bold  border-start">訂單管理</button>
+          <button type="button" class="btn btn-light text-start  fw-bold  border-start">我的收藏</button>
+        </div>
+        <div class="bg-white p-9 pt-11">
+          <h1 class="fs-3 fs-lg-1">我的帳號</h1>
+          <ul class="nav nav-tabs gap-9" id="myTab" role="tablist">
+            <li class="nav-item  position-relative" role="presentation">
+              <button class="nav-link border-bottom active border-0 px-0 py-5" id="home-tab" data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                aria-selected="true">個人資訊<span class="tab-active"></span></button>
+
+            </li>
+            <li class="nav-item position-relative" role="presentation">
+              <button class="nav-link  border-bottom  border-0 px-0 py-5" id="profile-tab" data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                aria-selected="false">常用旅客<span class="tab-active"></span></button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">
+              <ul class="pt-7">
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">姓名</p>
+                  <p class="fw-bold">Jessica Yen</p>
+                </li>
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">電子信箱</p>
+                  <p class="fw-bold">jessica.yen@gmail.com</p>
+                </li>
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">密碼</p>
+                  <p class="fw-bold">************</p>
+                </li>
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">聯絡電話</p>
+                  <p class="fw-bold">+886 912-345-678</p>
+                </li>
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">地址</p>
+                  <p class="fw-bold">台北市士林區幸福路193號5樓之1</p>
+                </li>
+                <li>
+                  <p class="mb-2 text-neutral-80 opacity-75">生日</p>
+                  <p class="fw-bold">1995-09-20</p>
+                </li>
+              </ul>
+
+
+
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <div class="list-group pt-7">
+                <a href="#" class="list-group-item  list-group-item-action d-flex align-items-center mb-3">
+                  <img src="/2025W8/assets/avatar-1-cp2HwrEX.png" alt="user" class="common-photo rounded-circle me-2">
+                  <div>
+                    <p>Jessica Yen</p>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item  list-group-item-action active d-flex align-items-center mb-3">
+                  <img src="/2025W8/assets/avatar-2-Bso7ct1Q.jpg" alt="user" class="common-photo rounded-circle me-2">
+                  <div>
+                    <p class="mb-2">Jenny Lin</p>
+                    <p class="text-primary-100 mb-1">
+                      <span class="material-icons-outlined align-bottom me-2">mail</span>
+
+                      Jenny.Linnn@gmail.com
+                    </p>
+                    <p class="text-primary-100">
+                      <span class="material-icons-outlined align-bottom me-2">cake</span>
+                      2001.01.30
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="bg-black footer">
+  <div class="container">
+    <div class="d-flex  flex-column  flex-lg-row   align-items-lg-center justify-content-lg-between">
+      <div class="mb-10 mb-lg-0">
+        <img src="data:image/png;base64,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" alt="logo" class="mb-10 mb-lg-9">
+        <ul class="d-flex flex-column  flex-lg-row  text-white gap-5 gap-lg-9">
+          <li>
+            <a href="#">常見問題</a>
+          </li>
+          <li>
+            <a href="#">關於我們</a>
+          </li>
+          <li>
+            <a href="#">隱私權政策</a>
+          </li>
+          <li>
+            <a href="#">使用者條款</a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-start text-lg-end">
+        <ul class="d-flex justify-content-lg-end gap-5 mb-5">
+          <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMzSURBVHgBxVkxbxoxFH5kvQ7pkqxJZpCaf0DKjpqRqVTKTromQ7pkT+ZGqjoxpmVvyj9IpNK1sJIFhjC77+M+g3MinG0u8Emf7o6z/T6e7Wf7XUkiYYyp6GVfWeb1jTLh64lyqHxU9pW9Uqn0RyJQCimsoiCgTv6zxnl9UhETp9yucod/oMw/gLJtLTf0teklkAYbypqyo7wLMcI2dtgGxP4NFbqs4bqyrWxQ6Krt7bCtG2VNVoE2cMKGDqRgUOhX2JBQwFPKS2WrCK/l2DlTXgXZYYWWrAl0xKVvYXTruawZFHmSV6jGMfdq3brEdsIxWX+pgB20u7IhYDIyYswctOW8R4y6KyQ2RUJtI/h3qGUOeu9mk95ztCSuF60HobgXsTpsK0+Vv5V9M8eIvzWVeyFtcrmEF+uuoaCxR2EXFOKDCwkAe7RtHyqIewGV95T3Jhz3Id406UJRQRdj8e6JP26V7yQcqPMtoDx2SPsQiHXWSyDGlMSJs6iyDR9AUxkCsQ3ynRwfnftD5/5I+cDfcO0qj5U/lW/5flEby4CQc2AFPnpWqjr348y7MflJOeD9SPlB6a7rvj2A2ZxAYGJ3wgUBM/az8wyhA+d5WzxATcmWhKGbMYyu+5ExmvXYQNKutniQEJjM2pdT9osTNvrkyMzjoRsXR5lyFk1PW9MVJSZIx8TAWSwMsIONwxW6eCDpsdEXx/J8TPliwLq+mE5eCMR5texbSwfvQNJw8l38gXF3xLq+gKY+BE4jdkBFiBwrm6x3LenkGb9Q/FrLHgaKA5AYSBcQTpSVt1raxq15PomqEgHD7R/ubZjB9ua9rA4bbuBVeK0rcZhu/2ZPJrNJjIWJ2P8taGPx0cOkp7mGbBgmzTqcLnphvVh4FsEXJu/oYdI8zKaPnbW8gujqtWUVHLvnxjdPY5iXkTXBpFkF72OHdTfyM2fm9ZNHLTok3I6Zp98KPy9zMxCXfss0VGNDjYJWm4RtIWLU88r7poBt+tauj+2IQz7+HFYriPrFNnJ38qFJdDfPPKFYEGeaYSaJjqS5+xUA8RVLaifkiBEkMCO24hiHcHjI/QzxJM5XgNjPEP8B7WlNvM4xgjkAAAAASUVORK5CYII=" alt="line"></li>
+          <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL5SURBVHgBxVmxctNAEF156ERhGqd1UjtDPgFwb2pXhBn3Tp00NKkJNSmgco37JMMXwAxJm7h1GlxE9bFPeoovAnx30tl+M2/ksVa7T6u7094qkZowxuzrYVfZ4/G5MuXpTDlX3ivvlNdJkvySGkhCjFUUBAzI2zI4jw8qIrPsdpQd3kCPNwDbidrNfWN6CWTAobKvnCovQ4LQR4c+IPYmVOgqxwPlRDmk0Kb+OvR1ruxLE6iDER3tSWRQ6GfEkFAgU8pT5ThG1hxxjpVnQXF4wVg2BCbi1NcYj/VENgyKHLmM+hxza3usK2KnHJOD/xmUg3ZHtgRMRq4YjwlqWeexRl1GWZtqQmNj8Z9SyxLM3vk2s2dpSe0sJvwTM1ZvIDnzcHCoh7fKtrLLv9tkFTPruFB+0xhfxB0jz6DaTso/vMae2lyZ5vjhEQdPNBfXYlWSucYeM/dKmuNAfX1YZaBaUAXdQhsmCV7e1+LGO4mHAw8bVEi7EIj3rI/AtsTDSw8baOpBIMogn6XFJfCF8r0sJ0ZTYMnZKwXee1zQXXVSx82CM/S18pM08EWg+E0hMC0r4RhQXzPlkRTbgJ9SE9SUtmS9aDxuITCLWRyor7byoxSzsCs1QU0ZBD5IsaFxYSZuYWMKO5IGvgi8OObPaIzx0rRI+B1gu/CwyScvMoj9as/jgtoD/h/wEQhNdxCYr9geF3yXePjqYYNXcPECYXmzqWLhyiNOXv7hd1luPS1vVl98KMtyq0obC1k+ypmElVtPyz9TKRK3CVPZeuQLNVftCyl6LtsGug03f5V/VhajdxF8YVxbD1P0Yba97ey7DEdmg10FK+6J8e3TGPZlZEMwRVfBuWGzL0C60Z85NutvHo2ZkPA4Ztl+i75fNkUXoV77reKoT0fDGEKZtSFXDOey5tsCLtu35ftxUqMFjJt7I8Vae0Efzko+tIlu95kzigWxp5lXmuioMe2vAFhf0XeZhmwxggRWxO5bwSEcGbI/Q6AQfvwKUPczxB8oEaJBwiADDAAAAABJRU5ErkJggg==" alt="youtube"></li>
+          <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKuSURBVHgBzVmxbtswED0Z3tQhk7M2nh2gn1BUu9DVu3dnTrp0yNzsDdBunuu9QT4hRdw1zmovyRDN7D3rKSbU1hIp2tIDHkRYzN3TiTkeT5F4whhzqpcT5YjXN8qYtzPlSrlWLpWLKIruxQORy2QVBQEp+VA45/VFRWTWvGPlgA8w4gNg7kznrer6rCWQDsfKRDlX3rg4oY0BbUDsb1ehuwynyplyTKFN7Q1o61qZSBOogQkNDSUwKPQrfIgrECnlpXIaImoVfs6VV05++AdTORAYiMu6k/FaL+TAoMhJ1aSEa25vr3WH75hrMv3fhGLRHktLwD8jM8ZrgHrWfeSomyC5yRPqG8l/Ti1bMHrXbUbP0hLbUSwiCMWLptFTo0fKL8ons8WViw1ul4hiahsOsvbUxtL8jW/iCL7RGcZ9ViVZgOi918tb66c75bPylzhCtazV3gO09SXfvBfSHO+s8Q918lGaARXSCdYg9tkQAo+s8ZM0BzSNIBBlUGupZQeQcoZSToyuMNU4Ew8U6QYRjItKeE94FA9QU9yT/eNZGgACsyavOCJ0+Nn6+Xu0xa14gJoyCHyR/EDTNWDjWEHgo+THxq4B2WUNgTivjqR7gKYlBG4ytnQP2IIXPZ74h10otQqY/AyN9HdfpBmUNx+kO9iUfxj0+QMEomCdN0jat9b4TjzB6GH9fSrfwGluLC2DXYezf90oSu3gXYS6qDx6mLwP0/axM6maODlkV8Hye2Hq9mkM+zJyILCrUP9wxXCjP3Nu9t88mjIg7n7Mtv0WPImbvIvg134rGUpoaBzoaBrTFjJGWjW/bgu4aN9u9kfxaN/y4bBbQdRP2qjcFFyb6HafOaNYEN38VamJjhrT/gqA/Iody2m3chJYEntqOYdwRMj+DIFC+PUrgO9niD97ADpLkZpsiAAAAABJRU5ErkJggg==" alt="facebook"></li>
+        </ul>
+        <p class="copyright">copyright © 2025 ZOBAA 旅遊網站 All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+</body>
+
+</html>

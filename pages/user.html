@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人資訊頁</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="bg-neutral-15">
+      <div class="container main-user">
+        <section class="banner-user position-relative">
+          <div class="position-absolute d-none d-lg-block edit-banner text-white">
+            <span class="material-icons-outlined align-bottom me-2">edit</span>
+            <span>更換封面</span>
+          </div>
+          <div class="text-center profile position-absolute">
+            <img src="/assets/images/avatar-1.png" alt="user-img" class="edit-photo mb-2">
+            <h3 class="mb-1 fs-6 fs-lg-5 fw-bold">Jessica</h3>
+            <p class="fs-8 fs-lg-7">jessica.yen@gmail.com</p>
+          </div>
+        </section>
+
+        <div class="btn-group w-100 rounded-4 mb-7" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-light text-start fw-bold position-relative">我的帳號
+            <span class="btn-active"></span>
+          </button>
+          <button type="button" class="btn btn-light text-start  fw-bold  border-start">訂單管理</button>
+          <button type="button" class="btn btn-light text-start  fw-bold  border-start">我的收藏</button>
+        </div>
+        <div class="bg-white p-9 pt-11">
+          <h1 class="fs-3 fs-lg-1">我的帳號</h1>
+          <ul class="nav nav-tabs gap-9" id="myTab" role="tablist">
+            <li class="nav-item  position-relative" role="presentation">
+              <button class="nav-link border-bottom active border-0 px-0 py-5" id="home-tab" data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                aria-selected="true">個人資訊<span class="tab-active"></span></button>
+
+            </li>
+            <li class="nav-item position-relative" role="presentation">
+              <button class="nav-link  border-bottom  border-0 px-0 py-5" id="profile-tab" data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                aria-selected="false">常用旅客<span class="tab-active"></span></button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">
+              <ul class="pt-7">
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">姓名</p>
+                  <p class="fw-bold">Jessica Yen</p>
+                </li>
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">電子信箱</p>
+                  <p class="fw-bold">jessica.yen@gmail.com</p>
+                </li>
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">密碼</p>
+                  <p class="fw-bold">************</p>
+                </li>
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">聯絡電話</p>
+                  <p class="fw-bold">+886 912-345-678</p>
+                </li>
+                <li class="mb-7">
+                  <p class="mb-2 text-neutral-80 opacity-75">地址</p>
+                  <p class="fw-bold">台北市士林區幸福路193號5樓之1</p>
+                </li>
+                <li>
+                  <p class="mb-2 text-neutral-80 opacity-75">生日</p>
+                  <p class="fw-bold">1995-09-20</p>
+                </li>
+              </ul>
+
+
+
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <div class="list-group pt-7">
+                <a href="#" class="list-group-item  list-group-item-action d-flex align-items-center mb-3">
+                  <img src="/assets/images/avatar-1.png" alt="user" class="common-photo rounded-circle me-2">
+                  <div>
+                    <p>Jessica Yen</p>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item  list-group-item-action active d-flex align-items-center mb-3">
+                  <img src="/assets/images/avatar-2.jpg" alt="user" class="common-photo rounded-circle me-2">
+                  <div>
+                    <p class="mb-2">Jenny Lin</p>
+                    <p class="text-primary-100 mb-1">
+                      <span class="material-icons-outlined align-bottom me-2">mail</span>
+
+                      Jenny.Linnn@gmail.com
+                    </p>
+                    <p class="text-primary-100">
+                      <span class="material-icons-outlined align-bottom me-2">cake</span>
+                      2001.01.30
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

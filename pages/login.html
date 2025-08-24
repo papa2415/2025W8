@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登入頁</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="bg-neutral-15 login-main">
+      <div class="d-flex">
+        <div id="carouselExampleInterval" class="carousel slide register-card  flex-shrink-0 d-none d-lg-block"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="/assets/images/cover.png" class="d-block" alt="cover">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="/assets/images/cover-1.png" class="d-block" alt="cover">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="/assets/images/cover-2.png" class="d-block" alt="cover">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-10 col-xxl-6">
+              <div>
+                <h1 class="mb-10">歡迎回來！</h1>
+                <ul>
+                  <li class="border mb-5 p-5 pe-9 d-flex"><img src="/assets/images/ic_google.png" alt="google">
+                    <p class="w-100 text-center">使用 Google 帳號登入</p>
+                  </li>
+                  <li class="border mb-5 p-5 pe-9  d-flex"><img src="/assets/images/ic_facebook.png" alt="facebook">
+                    <p class="w-100 text-center">使用 Facebook 帳號登入</p>
+                  </li>
+                  <li class="border mb-5 p-5 pe-9  d-flex"><img src="/assets/images/ic_apple.png" alt="apple">
+                    <p class="w-100 text-center">使用 Apple 帳號登入</p>
+                  </li>
+                </ul>
+                <h2 class="fs-7 mb-5">或使用 ZOBAA 帳號登入</h2>
+                <ul class="mb-10">
+                  <li>
+                    <div class="mb-5">
+                      <label for="email" class="form-label text-neutral-80 mb-2">電子信箱<span
+                          class="text-danger">*</span></label>
+                      <input type="email" class="form-control p-5" id="email" placeholder="請輸入電子信箱">
+                    </div>
+                  </li>
+                  <li class="mb-2">
+                    <div>
+                      <label for="password" class="form-label text-neutral-80 mb-2">密碼<span
+                          class="text-danger">*</span></label>
+                      <input type="password" class="form-control p-5" id="password" placeholder="請輸入密碼">
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        <label class="form-check-label" for="checkDefault">
+                          記住帳號
+                        </label>
+                      </div>
+                      <a href="#">忘記密碼？</a>
+                    </div>
+                  </li>
+                </ul>
+
+                <button type="button" class="btn w-100 bg-neutral-40 py-5 mb-10">立即登入</button>
+                <p>沒有 ZOBAA 帳號嗎？ <a href="register.html" class="text-decoration-underline fw-bold text-primary">立即註冊</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

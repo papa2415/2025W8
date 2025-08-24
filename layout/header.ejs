@@ -1,0 +1,73 @@
+<nav class="navbar bg-white py-4 py-lg-5 fixed-top">
+  <div class="container position-relative">
+    <div class="me-auto d-flex align-items-center">
+      <a class="navbar-brand p-0 me-7" href="#"><img src="/assets/images/logo.png" alt="logo"></a>
+      <form class="position-relative d-none d-lg-block">
+        <span
+          class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">search</span>
+        <input type="search" class="form-control rounded-1 py-2 ps-10 header-search-desktop" id="header-search-desktop"
+          placeholder="搜尋景點、地點或城市">
+      </form>
+    </div>
+
+    <div class="position-absolute start-0 end-0 px-4 bg-white z-1">
+      <div class="collapse" id="header-search">
+        <div class="d-flex align-center">
+          <form class="position-relative w-100">
+            <span
+              class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">search</span>
+            <input type="search" class="form-control rounded-1 py-2 ps-10" id="header-search-content"
+              placeholder="搜尋景點、地點或城市">
+          </form>
+          <button type="button" class="btn p-2 border-0" data-bs-toggle="collapse" data-bs-target="#header-search">
+            <span class="material-icons-outlined">close</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <button type="button" class="btn p-2 border-0" data-bs-toggle="collapse" data-bs-target="#header-search">
+      <span class="material-icons-outlined align-bottom d-lg-none">search</span>
+    </button>
+    <a href="#" class="btn border-0 py-2">
+      <span class="position-relative">
+        <span class="material-icons-outlined align-bottom">shopping_cart</span>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-0 cart-tag">
+          2
+          <span class="visually-hidden">cart number</span>
+        </span>
+      </span>
+    </a>
+    <a href="user.html" class="d-none d-lg-block"><img src="/assets/images/avatar-1.png" alt="user-img"
+        class="user-img rounded-circle  ms-5 me-2">Jessica</a>
+    <button class="btn border-0 p-2 d-lg-none" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="material-icons-outlined align-bottom">menu</span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header pb-5">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pt-5 d-flex flex-column justify-content-between">
+        <div>
+          <a href="#" class="list-group-item  list-group-item-action d-flex align-items-center mb-3">
+            <img src="/assets/images/avatar-1.png" alt="user" class="common-photo rounded-circle me-2">
+            <div>
+              <p>Jessica Yen</p>
+              <p>jessica.yen@gamil.com</p>
+            </div>
+          </a>
+          <hr>
+          <ul>
+            <li class="py-4"><span class="material-icons-outlined align-bottom me-2">article</span>訂單管理</li>
+            <li class="py-4"><span class="material-icons-outlined align-bottom me-2">favorite_border</span>我的收藏</li>
+            <li class="py-4"><span class="material-icons-outlined align-bottom me-2">settings</span>帳號設定</li>
+          </ul>
+        </div>
+        <a href="#" class="py-4"> <span class="material-icons-outlined align-bottom me-2">logout</span>登出</a>
+      </div>
+    </div>
+  </div>
+</nav>

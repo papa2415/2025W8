@@ -1,0 +1,13 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (min-width: 992px) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.copyright {
+  color: #d4d4d4;
+}
